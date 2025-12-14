@@ -26,7 +26,7 @@ class AdvancedConstructorCallGenerator {
         jsonNode: JsonNode,
         className: String,
         result: StringBuilder,
-        indent: String = ""
+        indent: String = "",
     ) {
         result.append("$className(")
 
@@ -36,7 +36,7 @@ class AdvancedConstructorCallGenerator {
 
             fields.forEachIndexed { index, (key, value) ->
                 val nestedClassName = key.replaceFirstChar { if (it.isLowerCase()) it.titlecase() else it.toString() }
-                result.append("$indent    $key = ")
+                result.append("$indent    ${key.snakeToLowerCamelCase()} = ")
 
                 when {
                     value.isObject -> {

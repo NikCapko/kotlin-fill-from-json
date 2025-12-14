@@ -1,11 +1,9 @@
 package com.nikcapko.kotlin_fill_from_json
 
-import com.intellij.openapi.command.WriteCommandAction
 import com.intellij.openapi.editor.EditorFactory
 import com.intellij.openapi.editor.colors.EditorColorsManager
 import com.intellij.openapi.editor.ex.EditorEx
 import com.intellij.openapi.editor.highlighter.EditorHighlighterFactory
-import com.intellij.openapi.fileEditor.FileEditorManager
 import com.intellij.openapi.fileTypes.FileTypeManager
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.DialogWrapper

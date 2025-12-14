@@ -3,7 +3,6 @@ package com.nikcapko.kotlin_fill_from_json
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.DialogWrapper
 import com.intellij.openapi.ui.Messages
-import com.intellij.ui.components.JBCheckBox
 import com.intellij.ui.components.JBLabel
 import com.intellij.ui.components.JBScrollPane
 import com.intellij.ui.components.JBTextArea
@@ -12,7 +11,6 @@ import java.awt.*
 import javax.swing.BorderFactory
 import javax.swing.JComponent
 import javax.swing.JPanel
-import javax.swing.JScrollPane
 
 class JsonInputDialog(
     private val project: Project
